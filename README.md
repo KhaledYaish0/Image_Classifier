@@ -26,3 +26,56 @@ You’ll also find:
 ---
 
 ## 📁 Project Layout
+Image_Classifier_Project/
+└── Image_Classifier.ipynb # Main notebook (load data, train, evaluate, plot)
+
+> Note: The dataset itself is not stored in the repo; it’s fetched by `tensorflow_datasets` on first run.
+
+---
+
+## ⚙️ Setup
+```bash
+# (Optional) create a venv first
+# python -m venv .venv && source .venv/bin/activate  # Linux/macOS
+# .venv\Scripts\activate                              # Windows
+
+pip install -r requirements.txt
+```
+##▶️ How to Run
+
+Open the notebook and run all cells:
+
+jupyter notebook Image_Classifier.ipynb
+# or
+jupyter lab Image_Classifier.ipynb
+
+
+The notebook will:
+
+1. Load Oxford Flowers 102 via TFDS
+
+2. Split into train/validation/test
+
+3. Preprocess images
+
+4. Build & train a Keras model
+
+5. Evaluate on the test set and plot metrics (including a confusion matrix)
+
+## 🧪 Inference (example)
+
+Inside the notebook you’ll find a cell that runs prediction on one or more images and shows the predicted label.
+You can adapt it to run on your own images (paths or tensors).
+
+## 📜 License
+
+---
+
+### `requirements.txt`
+
+```txt
+tensorflow>=2.10
+tensorflow-datasets>=4.9
+numpy
+matplotlib
+scikit-learn
