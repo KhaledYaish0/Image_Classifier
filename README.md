@@ -1,14 +1,28 @@
-# Image_Classifier_Project
+# 🌸 Image Classifier — Oxford Flowers 102 (TensorFlow/Keras)
 
-Project Overview
-This project involves developing an image classification application using deep learning techniques with PyTorch. The application trains a model on a dataset of flower images and uses the trained model to classify new images. The development process begins with coding in a Jupyter Notebook to ensure the training implementation works, followed by converting the code into command-line applications: train.py and predict.py.​
+This repository contains a complete image classification pipeline using **TensorFlow/Keras** on the **Oxford Flowers 102** dataset (loaded via `tensorflow_datasets`).  
+It covers data loading and preprocessing, model training (Keras Sequential), evaluation (accuracy, loss, and confusion matrix), and simple inference.
 
-Installation
-To run the code in this project, you'll need the following Python libraries:
-- NumPy​
-- Pandas​
-- Matplotlib​
-- Pillow​
-- PyTorch​
+---
 
+## 📦 Tech & Data
+- **Framework:** TensorFlow / Keras
+- **Dataset:** Oxford Flowers 102 (`tfds.load("oxford_flowers102")`) — 102 flower categories
+- **Language:** Python
 
+---
+
+## 🔬 Reproducible Results (from this repo)
+- **Epochs:** 11  
+- **Test loss:** **0.8864**  
+- **Test accuracy:** **0.7772** (≈ 77.72%)  
+> Results are taken from the executed notebook outputs.
+
+You’ll also find:
+- A printed **model summary** (Keras Sequential)
+- Training curves (loss/accuracy)
+- A **confusion matrix** visualization for per-class performance
+
+---
+
+## 📁 Project Layout
